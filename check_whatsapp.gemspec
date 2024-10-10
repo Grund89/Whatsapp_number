@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/Grund89/Whatsapp_number"
-  spec.metadata["changelog_uri"] = "Put your gem's CHANGELOG.md URL here."
+ # spec.metadata["changelog_uri"] = "Put your gem's CHANGELOG.md URL here."
 
   spec.files = Dir.chdir(__dir__) do
     `git ls-files -z`.split("\x0").reject do |f|
