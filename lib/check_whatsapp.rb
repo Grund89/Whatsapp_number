@@ -1,8 +1,6 @@
-# frozen_string_literal: true
+require "check_whatsapp/version"
+require "check_whatsapp/verifier" # carrega o módulo responsável pela verificação
 
-require_relative "check_whatsapp/version"
-
-module CheckWhatsapp
-  class Error < StandardError; end
-  # Your code goes here...
+module CheckWhatsApp
+  # Código principal da gem ficará aqui
 end
