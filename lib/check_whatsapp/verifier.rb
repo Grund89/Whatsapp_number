@@ -11,6 +11,9 @@ module CheckWhatsApp
     end
 
     def check_number(phone_number)
+      # Imprime o diretório atual
+      puts "Diretório atual: #{Dir.pwd}"
+
       uri = URI("#{TWILIO_API_URL}/#{@account_sid}/IncomingPhoneNumbers.json")
       req = Net::HTTP::Get.new(uri)
       req.basic_auth(@account_sid, @auth_token)
