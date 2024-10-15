@@ -1,6 +1,5 @@
-require "check_whatsapp/version"
-require "check_whatsapp/verifier" # carrega o módulo responsável pela verificação
+require_relative 'check_whatsapp/verifier'
 
-module CheckWhatsApp
-  # Código principal da gem ficará aqui
-end
+# Passe os parâmetros para o Verifier
+verifier = CheckWhatsapp::Verifier.new(ARGV[0], ARGV[1], ARGV[2])
+verifier.check_number
